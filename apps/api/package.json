@@ -10,7 +10,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@pathway/shared": "*"
+    "@pathway/utils": "*"
   },
   "devDependencies": {
     "@types/node": "^20.10.6",

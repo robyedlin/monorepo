@@ -1,9 +1,9 @@
-import { greet, add } from "@pathway/shared";
+import { greet, add } from '@pathway/utils'
 
-console.log(greet("World"));
-console.log(`2 + 3 = ${add(2, 3)}`);
+console.log(greet('World'))
+console.log(`2 + 3 = ${add(2, 3)}`)
 
 // API server placeholder
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000
 
-console.log(`API server would start on port ${PORT}`);
+console.log(`API server would start on port ${PORT}`)
