@@ -3,7 +3,7 @@
  */
 
 export const greet = (name: string): string => {
-  return `Hello, ${name}!`
+  return `Hello you, ${name}!`
 }
 
 export const add = (a: number, b: number): number => {

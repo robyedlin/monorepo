@@ -8,9 +8,5 @@
     "baseUrl": "."
   },
   "include": ["src/**/*"],
-  "references": [
-    // { "path": "../../packages/types" },
-    { "path": "../../packages/utils" }
-    // { "path": "../../packages/schema" }
-  ]
+  "references": [{ "path": "../../packages/utils" }]
 }

@@ -1,4 +1,4 @@
-import { greet, add } from '@pathway/utils'
+import { greet, add } from '@local/utils'
 
 console.log(greet('World'))
 console.log(`2 + 3 = ${add(2, 3)}`)

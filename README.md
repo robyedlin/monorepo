@@ -1,4 +1,4 @@
-# Pathway Monorepo
+# Typescript Monorepo
 
 A TypeScript monorepo using npm workspaces.
 
@@ -31,5 +31,5 @@ npm run dev
 
 ## Workspaces
 
-- `@pathway/shared` - Shared package
-- `@pathway/api` - API application
+- `@apps/shared` - Shared package
+- `@packages/api` - API application
