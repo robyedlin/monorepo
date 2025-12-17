@@ -1,0 +1,16 @@
+export const PORT = process.env.PORT || 3000
+export const COOKIE_DOMAIN = process.env.COOKIE_DOMAIN || 'localhost'
+export const JWT_PRIVATE_KEY = process.env.JWT_PRIVATE_KEY || 's3cr3t'
+export const NODE_ENV = process.env.NODE_ENV || 'development'
+export const DB_HOST = process.env.DB_HOST || 'localhost'
+export const DB_PORT = Number(process.env.DB_PORT) || 5432
+export const DB_USER = process.env.DB_USER || 'postgres'
+export const DB_PASSWORD = process.env.DB_PASSWORD || 'postgres'
+export const DB_NAME = process.env.DB_NAME || 'inkwell'
+export const SENTRY_DSN_URL = process.env.SENTRY_DSN_URL || ''
+export const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY || ''
+export const SENDGRID_SENDER_EMAIL = process.env.SENDGRID_SENDER_EMAIL || ''
+export const API_URL = process.env.API_URL || 'http://localhost:3000'
+export const WWW_PUBLIC_URL = process.env.WWW_URL || 'http://localhost:5173'
+export const WWW_ADMIN_URL = process.env.WWW_URL || 'http://localhost:5173'
+export const APP_NAME = process.env.APP_NAME || 'Monorepo'

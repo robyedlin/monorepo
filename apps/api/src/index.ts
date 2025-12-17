@@ -1,9 +1,52 @@
-import { greet, add } from '@local/utils'
+import './instrument'
 
-console.log(greet('World'))
-console.log(`2 + 3 = ${add(2, 3)}`)
+import * as Sentry from '@sentry/node'
+import bodyParser from 'body-parser'
+import cookieParser from 'cookie-parser'
+import cors from 'cors'
+import * as dotenv from 'dotenv'
+import express, { Request, Response } from 'express'
 
-// API server placeholder
-const PORT = process.env.PORT || 3000
+import { PORT } from './env'
 
-console.log(`API server would start on port ${PORT}`)
+import { errorHandler } from './middleware/errors'
+
+import authRoutes from './modules/auth'
+
+dotenv.config()
+
+export function main() {
+  const app = express()
+  app.use(
+    cors({
+      origin: ['http://localhost:5173'],
+      credentials: true
+    })
+  )
+  app.use(express.json())
+  app.use(cookieParser())
+  app.use(bodyParser.urlencoded({ extended: false }))
+
+  app.use('/auth', authRoutes)
+
+  app.get('/', (_: Request, res: Response) => {
+    res.status(200).json({
+      status: 'OK'
+    })
+  })
+
+  app.get('/sentry-debug', () => {
+    throw new Error('Test sentry error!')
+  })
+
+  Sentry.setupExpressErrorHandler(app)
+  app.use(errorHandler)
+
+  const port = PORT
+
+  app.listen(port, () => {
+    console.info(`Server is running on port ${port}`)
+  })
+}
+
+main()

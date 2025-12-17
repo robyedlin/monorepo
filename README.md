@@ -5,9 +5,7 @@ A TypeScript monorepo using npm workspaces.
 ## Structure
 
 - `apps/api` - API application
-- `packages/types` - Shared types
-- `packages/utils` - Shared utilities and common code
-- `packages/schema` - Shared schema
+- `packages/shared` - Shared code
 
 ## Getting Started
 

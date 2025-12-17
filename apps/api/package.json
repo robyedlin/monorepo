@@ -1,5 +1,6 @@
 {
   "name": "@local/api",
+  "private": true,
   "version": "1.0.0",
   "type": "module",
   "main": "./dist/index.js",
@@ -9,11 +10,27 @@
     "start": "node dist/index.js",
     "clean": "rm -rf dist"
   },
-  "dependencies": {
-    "@local/utils": "*"
-  },
   "devDependencies": {
+    "@local/shared": "*",
+    "@sendgrid/client": "^8.1.6",
+    "@sendgrid/mail": "^8.1.6",
+    "@sentry/node": "^10.31.0",
+    "@types/body-parser": "^1.19.6",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^20.10.6",
+    "@types/pg": "^8.15.6",
+    "body-parser": "^1.20.4",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "drizzle-kit": "^0.31.8",
+    "drizzle-orm": "^0.45.1",
+    "express": "^4.22.1",
+    "jsonwebtoken": "^9.0.3",
+    "nanoid": "^3.3.11",
+    "pg": "^8.16.3",
     "typescript": "^5.3.3"
   }
 }
