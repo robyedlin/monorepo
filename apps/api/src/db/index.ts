@@ -10,7 +10,7 @@ import {
   DB_NAME
 } from '../env'
 
-import * as schema from '@local/shared/dist/schema/core.js'
+import * as schema from '@packages/shared/dist/schema/core.js'
 
 const pool = new Pool({
   host: DB_HOST,

@@ -2,7 +2,7 @@ import type { NextFunction, Request, Response } from 'express'
 import JWT, { JwtPayload } from 'jsonwebtoken'
 import { JWT_PRIVATE_KEY } from '../env'
 
-import { ACCESS_TOKEN_COOKIE_NAME } from '@local/shared'
+import { ACCESS_TOKEN_COOKIE_NAME } from '@packages/shared'
 
 import { db } from '../db'
 

@@ -1,5 +1,5 @@
 {
-  "name": "@local/monorepo",
+  "name": "@packages/monorepo",
   "version": "1.0.0",
   "private": true,
   "workspaces": [

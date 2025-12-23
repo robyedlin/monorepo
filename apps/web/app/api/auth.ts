@@ -1,5 +1,8 @@
 import { useMutation } from '@tanstack/react-query'
-import type { AuthOtpCreateInput, AuthSignInCreateInput } from '@local/shared'
+import type {
+  AuthOtpCreateInput,
+  AuthSignInCreateInput
+} from '@packages/shared'
 
 import { http } from '../utils/auth'
 

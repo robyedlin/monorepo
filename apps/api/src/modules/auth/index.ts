@@ -9,7 +9,7 @@ import {
   makeOtp,
   type AuthOtpCreateInput,
   type AuthSignInCreateInput
-} from '@local/shared'
+} from '@packages/shared'
 
 import {
   APP_NAME,

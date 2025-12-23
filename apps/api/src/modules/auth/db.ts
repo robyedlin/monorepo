@@ -1,5 +1,5 @@
 import { eq, sql } from 'drizzle-orm'
-import { jwt, otp, user, normalizeEmail } from '@local/shared'
+import { jwt, otp, user, normalizeEmail } from '@packages/shared'
 
 import { db } from '../../db'
 

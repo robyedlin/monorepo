@@ -1,4 +1,4 @@
-import { normalizeEmail, user } from '@local/shared'
+import { normalizeEmail, user } from '@packages/shared'
 import { and, eq } from 'drizzle-orm'
 import { db } from 'src/db'
 
