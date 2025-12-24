@@ -5,6 +5,7 @@ A TypeScript monorepo using npm workspaces.
 ## Structure
 
 - `apps/api` - API application
+- `apps/native` - Native application
 - `apps/web` - Web application
 - `packages/shared` - Shared code
 
@@ -30,6 +31,7 @@ npm run dev
 
 ## Workspaces
 
-- `@apps/shared` - Shared package
-- `@packages/api` - API application
-- `@packages/web` - Web application
+- `@packages/shared` - Shared package
+- `@apps/api` - API application
+- `@apps/native` - Native application
+- `@apps/web` - Web application
