@@ -12,9 +12,11 @@
     "drizzle-zod": "^0.8.3"
   },
   "peerDependencies": {
+    "@tanstack/react-query": "^5.90.12",
+    "axios": "^1.13.2",
     "drizzle-orm": "^0.45.1",
-    "zod": "^4.2.1",
     "nanoid": "^3.3.11",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "zod": "^4.2.1"
   }
 }

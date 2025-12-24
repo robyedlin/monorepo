@@ -7,9 +7,7 @@ import {
 } from 'react'
 import { useNavigate } from 'react-router'
 
-import { authSignOut } from '../api/auth'
-
-import { http, setInterceptors } from '../utils/auth'
+import { authSignOut, http, setInterceptors } from '@packages/shared'
 
 import { useAuthLocalStorage } from '../hooks/localStorage'
 

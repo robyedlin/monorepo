@@ -1,10 +1,7 @@
 import { useMutation } from '@tanstack/react-query'
-import type {
-  AuthOtpCreateInput,
-  AuthSignInCreateInput
-} from '@packages/shared'
+import type { AuthOtpCreateInput, AuthSignInCreateInput } from '../../schema'
 
-import { http } from '../utils/auth'
+import { http } from '../utils/http'
 
 export const fetchAuthOtp = async (input: AuthOtpCreateInput) => {
   const res = await http.post(`/auth/otp`, input)

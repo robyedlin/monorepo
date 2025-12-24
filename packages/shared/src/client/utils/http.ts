@@ -1,9 +1,9 @@
 import axios from 'axios'
 
-import ENV from '../env'
+import { API_BASE_URL } from '../../env'
 
 export const http = axios.create({
-  baseURL: ENV.API_BASE_URL,
+  baseURL: API_BASE_URL,
   withCredentials: true
 })
 
@@ -17,7 +17,7 @@ export const setInterceptors = (signOut: () => void) => {
       if (response?.status === 401) {
         try {
           // use a new axios instance to avoid infinite recursion
-          await axios.post(`${ENV.API_BASE_URL}/auth/sign-in/refresh`, null, {
+          await axios.post(`${API_BASE_URL}/auth/sign-in/refresh`, null, {
             withCredentials: true
           })
           try {
