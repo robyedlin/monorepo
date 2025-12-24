@@ -31,7 +31,7 @@ npm run dev
 
 ## Workspaces
 
-- `@packages/shared` - Shared package
 - `@apps/api` - API application
 - `@apps/native` - Native application
 - `@apps/web` - Web application
+- `@packages/shared` - Shared package
