@@ -28,11 +28,10 @@ import { updateUser } from '../users/db'
 import {
   createOtp,
   deactivateOtpByCode,
-  findActiveUserByEmail,
   findValidOtpByCode,
   signInUser
 } from './db'
-import { findUser } from '../users/db'
+import { findUser, findActiveUserByEmail } from '../users/db'
 import { createTokens } from './utils'
 
 const router = express.Router()

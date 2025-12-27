@@ -1,5 +1,6 @@
 import jwt from 'jsonwebtoken'
-import { findUser, createJwtsByUserId } from './db'
+import { createJwtsByUserId } from './db'
+import { findUser } from '../users/db'
 import { JWT_PRIVATE_KEY } from '../../env'
 import { nanoid } from 'nanoid'
 

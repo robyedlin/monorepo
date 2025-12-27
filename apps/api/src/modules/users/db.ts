@@ -9,6 +9,19 @@ export const findUser = async (authorizedUserId: string) => {
   return result
 }
 
+export const findActiveUserByEmail = async (email: string) => {
+  const result = await db.query.user.findFirst({
+    where: (table, { and, eq, isNull }) => {
+      return and(
+        eq(table.email, normalizeEmail(email)),
+        isNull(table.deactivatedAt)
+      )
+    }
+  })
+
+  return result
+}
+
 export const createUser = async (data: typeof user.$inferInsert) => {
   if (data.email) {
     data.email = normalizeEmail(data.email)
